@@ -4,6 +4,7 @@ Projeto de um chat real-time com WebSocket - [Projeto Prático do Curso de Desen
 -------------------------------------------
 
 #### Configurando as dependências do projeto, usando o npm
+##### Observação: Essas informações já estão contidas no arquivo [package.json](./package.json)
 
 > Iniciar o NPM
 ```bash
