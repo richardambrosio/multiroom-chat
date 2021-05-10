@@ -6,6 +6,11 @@ Projeto de um chat real-time com WebSocket - [Projeto Prático do Curso de Desen
 #### Configurando as dependências do projeto, usando o npm
 ##### Observação: Essas informações já estão contidas no arquivo [package.json](./package.json)
 
+>> Para instalar as dependências contidas no [package.json](./package.json), execute o comando
+```bash
+npm install
+```
+
 > Iniciar o NPM
 ```bash
 npm init
@@ -34,4 +39,9 @@ npm install body-parser --save
 > Express-Validator
 ```bash
 npm install express-validator --save
+```
+
+> Socket.io
+```bash
+npm install socket.io --save
 ```
