@@ -1,4 +1,4 @@
 module.exports.home = function(application, request, response){
     
-    response.render("index");
+    response.render("index", {validacao: {}});
 }
