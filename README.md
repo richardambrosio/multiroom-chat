@@ -1,5 +1,5 @@
 # multiroom-chat
-Projeto de um chat real-time com WebSocket
+Projeto de um chat real-time com WebSocket - [Projeto Prático do Curso de Desenvolvedor NodeJS - Udemy](https://www.udemy.com/course/curso-completo-do-desenvolvedor-nodejs/)
 
 -------------------------------------------
 
