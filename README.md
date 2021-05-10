@@ -3,7 +3,7 @@ Projeto de um chat real-time com WebSocket
 
 -------------------------------------------
 
-## Configurando as dependências do projeto, usando o npm
+#### Configurando as dependências do projeto, usando o npm
 
 > Iniciar o NPM
 ```bash
