@@ -11,6 +11,7 @@ Projeto de um chat real-time com WebSocket - [Projeto Prático do Curso de Desen
 ```bash
 npm install
 ```
+-----------------------------------------------
 
 > Iniciar o NPM
 ```bash
