@@ -40,7 +40,7 @@ npm install body-parser --save
 
 > Express-Validator
 ```bash
-npm install express-validator --save
+npm install express-validator@3.2.0 --save
 ```
 
 > Socket.io
