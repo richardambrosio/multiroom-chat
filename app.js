@@ -20,6 +20,8 @@ io.on('connection', function(socket){
     });
 
     socket.on('msgParaServidor', function(data){
+
+        //eventos de diálogo
         socket.emit(
             'msgParaCliente',
             {apelido: data.apelido, mensagem: data.mensagem}
@@ -28,5 +30,17 @@ io.on('connection', function(socket){
             'msgParaCliente',
             {apelido: data.apelido, mensagem: data.mensagem}
         );//envia para todos os outros clientes do socket
+
+        //participantes
+        if (parseInt(data.apelido_atualizado_nos_clientes) == 0){
+            socket.emit(
+                'participantesParaCliente',
+                {apelido: data.apelido}
+            ); //envia apenas para um cliente
+            socket.broadcast.emit(
+                'participantesParaCliente',
+                {apelido: data.apelido}
+            );//envia para todos os outros clientes do socket
+        }
     });
 }); //escutando as tentativas de conexão do cliente
