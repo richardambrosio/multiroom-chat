@@ -18,4 +18,15 @@ io.on('connection', function(socket){
     socket.on('disconnect', function(){
         console.log('Usuário desconectou');
     });
+
+    socket.on('msgParaServidor', function(data){
+        socket.emit(
+            'msgParaCliente',
+            {apelido: data.apelido, mensagem: data.mensagem}
+        ); //envia apenas para um cliente
+        socket.broadcast.emit(
+            'msgParaCliente',
+            {apelido: data.apelido, mensagem: data.mensagem}
+        );//envia para todos os outros clientes do socket
+    });
 }); //escutando as tentativas de conexão do cliente
